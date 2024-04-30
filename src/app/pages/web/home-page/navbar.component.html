@@ -1,0 +1,43 @@
+<!-- navbar.component.html -->
+
+<nav class="navbar">
+    <ul class="menu">
+      <li>
+        <a href="#">Areas of Expertise</a>
+        <ul #submenu class="submenu hide" *ngIf="isSubmenuVisible">
+          <li><a (click)="toggleSubmenu('Engineering & Contracting')">Engineering & Contracting</a></li>
+          <li><a (click)="toggleSubmenu('Electro-Mechanical Solutions')">Electro-Mechanical Solutions</a></li>
+          <li><a (click)="toggleSubmenu('Facility Services')">Facility Services</a></li>
+          <li><a (click)="toggleSubmenu('Utility Services')">Utility Services</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Projects</a></li>
+      <li>
+        <a href="#">About</a>
+        <ul #submenu class="submenu" *ngIf="isSubmenuVisible">
+          <li><a (click)="toggleSubmenu('Leadership')">Leadership</a></li>
+          <li><a (click)="toggleSubmenu('Story')">Story</a></li>
+          <li><a (click)="toggleSubmenu('Why Choose Us')">Why Choose Us</a></li>
+        </ul>
+      </li>
+      <li><a href="#">News</a></li>
+      <li>
+        <a href="#">Careers</a>
+        <ul #submenu class="submenu" *ngIf="isSubmenuVisible">
+          <li><a (click)="toggleSubmenu('BUTEC Academy')">BUTEC Academy</a></li>
+          <li><a (click)="toggleSubmenu('Life At BUTEC')">Life At BUTEC</a></li>
+          <li><a (click)="toggleSubmenu('Open Positions')">Open Positions</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contact</a></li>
+      <li>
+        <a href="#">English</a>
+        <ul #submenu class="submenu" *ngIf="isSubmenuVisible">
+          <li><a href="#">English</a></li>
+          <li><a href="#">Arabic</a></li>
+          <li><a href="#">French</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  
